@@ -20,15 +20,18 @@ namespace RPG.Control
             foreach (RaycastHit hit in hits)
             {
                 CombatTarget target = hit.transform.GetComponent<CombatTarget>();
+                if (target == null) continue;
+
+                GameObject targetGameObject = target.gameObject;
                 // enemy öldüyse, colliderı başka bir enemye saldırmaya engel olmasın diye
-                if (!GetComponent<Fighter>().CanAttack(target)) 
+                if (!GetComponent<Fighter>().CanAttack(target.gameObject)) 
                 {
                     continue;
                 }
 
                 if (Input.GetMouseButtonDown(0))
                 {
-                    GetComponent<Fighter>().Attack(target);
+                    GetComponent<Fighter>().Attack(target.gameObject);
                 }
                 return true;
             }
