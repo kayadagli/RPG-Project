@@ -20,7 +20,11 @@ namespace RPG.Control
             foreach (RaycastHit hit in hits)
             {
                 CombatTarget target = hit.transform.GetComponent<CombatTarget>();
-                if (target == null) continue;
+                // enemy öldüyse, colliderı başka bir enemye saldırmaya engel olmasın diye
+                if (!GetComponent<Fighter>().CanAttack(target)) 
+                {
+                    continue;
+                }
 
                 if (Input.GetMouseButtonDown(0))
                 {
