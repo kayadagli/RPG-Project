@@ -87,6 +87,12 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 3f6fc0cf5e5d31c458bc74ede87cb8ae, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 679ff741e12a7e740819ede24a7000b7, type: 3}
+--- !u!4 &473597458007566209 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 461188, guid: 679ff741e12a7e740819ede24a7000b7,
+    type: 3}
+  m_PrefabInstance: {fileID: 473597458007895557}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2799575550686283610
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -94,6 +100,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4426930981036493902, guid: 9184f04790e7cc645875d1e945e6656f,
+        type: 3}
+      propertyPath: uniqueIdentifier
+      value: player
+      objectReference: {fileID: 0}
     - target: {fileID: 309558310, guid: 9184f04790e7cc645875d1e945e6656f, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -103,6 +114,29 @@ PrefabInstance:
       propertyPath: weaponDamage
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 2624362443605400690, guid: 9184f04790e7cc645875d1e945e6656f,
+        type: 3}
+      propertyPath: weaponOverride
+      value: 
+      objectReference: {fileID: 22100000, guid: 0eeee824072bd9441bfdb3bb7a2b475d,
+        type: 2}
+    - target: {fileID: 2624362443605400690, guid: 9184f04790e7cc645875d1e945e6656f,
+        type: 3}
+      propertyPath: weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: 559e0808112b7a541b1073d750ef9b18,
+        type: 2}
+    - target: {fileID: 2624362443605400690, guid: 9184f04790e7cc645875d1e945e6656f,
+        type: 3}
+      propertyPath: handTransform
+      value: 
+      objectReference: {fileID: 473597458007566209}
+    - target: {fileID: 2624362443605400690, guid: 9184f04790e7cc645875d1e945e6656f,
+        type: 3}
+      propertyPath: defaultWeapon
+      value: 
+      objectReference: {fileID: 11400000, guid: f93df6e503aee7b4fb06ccef34fca70f,
+        type: 2}
     - target: {fileID: 4376225827779515207, guid: 9184f04790e7cc645875d1e945e6656f,
         type: 3}
       propertyPath: healthPoints
